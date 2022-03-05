@@ -1,3 +1,3 @@
 | Data-Structures | Data-Structures |
 | --- | --- |
-| [Stack](/DataStructures/Stack)
+| [Stack](/DataStructures/Stack) | [Queue](/DataStructures/Queue)
