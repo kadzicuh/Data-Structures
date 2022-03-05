@@ -25,6 +25,7 @@ SOFTWARE.
 //#include "Stack/Stack.h"
 //#include "Queue/Queue.h"
 //#include "CircularQueue/CircularQueue.h"
+#include "Deque/Deque.h"
 
 int main() 
 {
@@ -65,5 +66,21 @@ int main()
         printCircularQueue(c);
         deleteCircularQueue(c);
     ---------------------------------------------CIRCULAR QUEUE END--------------------------------
+    */
+
+    /*
+    ---------------------------------------------DEQUE---------------------------------------------
+        deque* d = createDeque(4);
+        addFront(d, 7);
+        addRear(d, 12);
+        addFront(d, 5);
+        addRear(d, 6);
+        printDeque(d);
+        delFront(d);
+        printDeque(d);
+        delRear(d);
+        printDeque(d);
+        deleteDeque(d);
+    ---------------------------------------------DEQUE END-----------------------------------------
     */
 }
