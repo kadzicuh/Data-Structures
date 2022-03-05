@@ -19,11 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CircularQueue\CircularQueue.c" />
     <ClCompile Include="Main.c" />
     <ClCompile Include="Queue\Queue.c" />
     <ClCompile Include="Stack\Stack.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CircularQueue\CircularQueue.h" />
     <ClInclude Include="Queue\Queue.h" />
     <ClInclude Include="Stack\Stack.h" />
   </ItemGroup>

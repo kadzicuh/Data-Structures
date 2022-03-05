@@ -23,7 +23,8 @@ SOFTWARE.
 */
 
 //#include "Stack/Stack.h"
-#include "Queue/Queue.h"
+//#include "Queue/Queue.h"
+//#include "CircularQueue/CircularQueue.h"
 
 int main() 
 {
@@ -51,5 +52,18 @@ int main()
         printQueue(q);
         deleteQueue(q);
     ---------------------------------------------QUEUE END-----------------------------------------
+    */
+
+    /*
+    ---------------------------------------------CIRCULAR QUEUE------------------------------------
+        circularQueue* c = createCircularQueue(2);
+        enCircularQueue(c, 10);
+        enCircularQueue(c, 20);
+        enCircularQueue(c, 30);
+        peekCircularQueue(c);
+        deCircularQueue(c);
+        printCircularQueue(c);
+        deleteCircularQueue(c);
+    ---------------------------------------------CIRCULAR QUEUE END--------------------------------
     */
 }

@@ -24,12 +24,18 @@
     <ClCompile Include="Queue\Queue.c">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="CircularQueue\CircularQueue.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Stack\Stack.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="Queue\Queue.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="CircularQueue\CircularQueue.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
