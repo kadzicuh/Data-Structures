@@ -25,7 +25,7 @@ SOFTWARE.
 //#include "Stack/Stack.h"
 //#include "Queue/Queue.h"
 //#include "CircularQueue/CircularQueue.h"
-#include "Deque/Deque.h"
+//#include "Deque/Deque.h"
 
 int main() 
 {
