@@ -22,25 +22,26 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-#ifndef STACK_H
-#define STACK_H
+#ifndef QUEUE_H
+#define QUEUE_H
 
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef void* stackValue;
+typedef void* queueValue;
 typedef struct
 {
     unsigned int capacity;
-    stackValue* data;
-    int top;
-} stack;
+    queueValue* data;
+    int front;
+    int rear;
+} queue;
 
-stack* createStack(unsigned int);
-void deleteStack(stack*);
-void pushStack(stack*, stackValue);
-void popStack(stack*);
-void peekStack(stack*);
-void printStack(stack*);
+queue* createQueue(unsigned int);
+void deleteQueue(queue*);
+void enQueue(queue*, queueValue);
+void deQueue(queue*);
+void peekQueue(queue*);
+void printQueue(queue*);
 
-#endif // !STACK_H
+#endif // !QUEUE_H

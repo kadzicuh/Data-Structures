@@ -20,9 +20,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.c" />
+    <ClCompile Include="Queue\Queue.c" />
     <ClCompile Include="Stack\Stack.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Queue\Queue.h" />
     <ClInclude Include="Stack\Stack.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

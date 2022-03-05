@@ -22,70 +22,80 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-#include "Stack.h"
+#include "Queue.h"
 
-stack* createStack(unsigned int size)
+queue* createQueue(unsigned int size)
 {
     if (size <= 0)
         size = 10;
 
-    stack* ptr = (stack*)malloc(sizeof(stack));
+    queue* ptr = (queue*)malloc(sizeof(queue));
 
-    ptr->data = (stackValue*)malloc(size * sizeof(stackValue));
+    ptr->data = (queueValue*)malloc(size * sizeof(queueValue));
     ptr->capacity = size;
-    ptr->top = -1;
+    ptr->front = -1;
+    ptr->rear = -1;
 
     return ptr;
 }
 
-void deleteStack(stack* s)
+void deleteQueue(queue* q)
 {
-    free(s->data);
-    free(s);
+    free(q->data);
+    free(q);
 }
 
-void pushStack(stack* s, stackValue value)
+void enQueue(queue* q, queueValue value)
 {
-    if (s->top == s->capacity - 1)
-        printf("Stack is Full \n");
+    if (q->rear == q->capacity - 1)
+        printf("Queue is Full \n");
     else
     {
-        s->top++;
-        s->data[s->top] = value;
+        if (q->front == -1)
+            q->front = 0;
 
-        printf("pushed -> %d \n", s->data[s->top]);
+        q->rear++;
+        q->data[q->rear] = value;
+
+        printf("Inserted -> %d \n", q->data[q->rear]);
     }
 }
 
-void popStack(stack* s)
+void deQueue(queue* q)
 {
-    if (s->top == -1)
-        printf("Stack is Empty \n");
+    if (q->front == -1)
+        printf("Queue is Empty \n");
     else
     {
-        printf("popped -> %d \n", s->data[s->top]);
+        printf("Deleted -> %d \n", q->data[q->front]);
 
-        s->top--;
+        q->front++;
+
+        if (q->front > q->rear)
+        {
+            q->front = -1;
+            q->rear = -1;
+        }
     }
 }
 
-void peekStack(stack* s)
+void peekQueue(queue* q)
 {
-    if (s->top == -1)
-        printf("Stack is Empty \n");
+    if (q->front == -1)
+        printf("Queue is Empty \n");
     else
-        printf("peeked -> %d \n", s->data[s->top]);
+        printf("Peeked -> %d \n", q->data[q->front]);
 }
 
-void printStack(stack* s)
+void printQueue(queue* q)
 {
-    if (s->top == -1)
-        printf("Stack is Empty \n");
+    if (q->front == -1)
+        printf("Queue is Empty \n");
     else
     {
-        printf("\nStack: \n");
+        printf("\nQueue: \n");
 
-        for (int i = 0; i <= s->top; i++)
-            printf("index -> %d, value -> %d \n", i, s->data[i]);
+        for (int i = q->front; i <= q->rear; i++)
+            printf("index -> %d, value -> %d \n", i, q->data[i]);
     }
 }

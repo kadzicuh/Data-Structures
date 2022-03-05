@@ -22,20 +22,34 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-#include "Stack/Stack.h"
+//#include "Stack/Stack.h"
+#include "Queue/Queue.h"
 
 int main() 
 {
     /*
-    ------------------------------------STACK--------------------------------------------
+    ---------------------------------------------STACK---------------------------------------------
         stack* s = createStack(2);
-        push(s, 10);
-        push(s, 20);
-        push(s, 30);
-        peek(s);
-        pop(s);
+        pushStack(s, 10);
+        pushStack(s, 20);
+        pushStack(s, 30);
+        peekStack(s);
+        popStack(s);
         printStack(s);
         deleteStack(s);
-    ------------------------------------STACK END----------------------------------------
+    ---------------------------------------------STACK END-----------------------------------------
+    */
+
+    /*
+    ---------------------------------------------QUEUE---------------------------------------------
+        queue* q = createQueue(2);
+        enQueue(q, 10);
+        enQueue(q, 20);
+        enQueue(q, 30);
+        peekQueue(q);
+        deQueue(q);
+        printQueue(q);
+        deleteQueue(q);
+    ---------------------------------------------QUEUE END-----------------------------------------
     */
 }
