@@ -26,6 +26,7 @@ SOFTWARE.
 //#include "Queue/Queue.h"
 //#include "CircularQueue/CircularQueue.h"
 //#include "Deque/Deque.h"
+//#include "SinglyLinkedList/SinglyLinkedList.h"
 
 int main() 
 {
@@ -82,5 +83,35 @@ int main()
         printDeque(d);
         deleteDeque(d);
     ---------------------------------------------DEQUE END-----------------------------------------
+    */
+
+    /*
+    ---------------------------------------------SINGLY LINKED LIST--------------------------------
+        struct Node* head = NULL;
+
+        insertAtEndSinglyLinkedList(&head, 1);
+        insertAtBeginSinglyLinkedList(&head, 2);
+        insertAtBeginSinglyLinkedList(&head, 3);
+        insertAtEndSinglyLinkedList(&head, 4);
+        insertAfterSinglyLinkedList(head->next, 5);
+
+        printf("Linked list: ");
+        printSinglyLinkedList(head);
+
+        printf("\nAfter deleting an element: ");
+        deleteNodeSinglyLinkedList(&head, 3);
+        printSinglyLinkedList(head);
+
+        int itemToFind = 3;
+
+        if (searchNodeSinglyLinkedList(&head, itemToFind))
+            printf("\n%d is found", itemToFind);
+        else
+            printf("\n%d is not found", itemToFind);
+
+        sortSinglyLinkedList(&head);
+        printf("\nSorted List: ");
+        printSinglyLinkedList(head);
+    ---------------------------------------------SINGLY LINKED LIST END----------------------------
     */
 }

@@ -30,6 +30,9 @@
     <ClCompile Include="Deque\Deque.c">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="SinglyLinkedList\SinglyLinkedList.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Stack\Stack.h">
@@ -42,6 +45,9 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="Deque\Deque.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="SinglyLinkedList\SinglyLinkedList.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

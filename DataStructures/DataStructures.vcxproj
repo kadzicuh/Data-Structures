@@ -23,12 +23,14 @@
     <ClCompile Include="Deque\Deque.c" />
     <ClCompile Include="Main.c" />
     <ClCompile Include="Queue\Queue.c" />
+    <ClCompile Include="SinglyLinkedList\SinglyLinkedList.c" />
     <ClCompile Include="Stack\Stack.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CircularQueue\CircularQueue.h" />
     <ClInclude Include="Deque\Deque.h" />
     <ClInclude Include="Queue\Queue.h" />
+    <ClInclude Include="SinglyLinkedList\SinglyLinkedList.h" />
     <ClInclude Include="Stack\Stack.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
