@@ -28,6 +28,7 @@ SOFTWARE.
 //#include "Deque/Deque.h"
 //#include "SinglyLinkedList/SinglyLinkedList.h"
 //#include "DoublyLinkedList/DoublyLinkedList.h"
+//#include "CircularLinkedList/CircularLinkedList.h"
 
 int main() 
 {
@@ -73,14 +74,14 @@ int main()
     /*
     ---------------------------------------------DEQUE---------------------------------------------
         deque* d = createDeque(4);
-        addFront(d, 7);
-        addRear(d, 12);
-        addFront(d, 5);
-        addRear(d, 6);
+        addFrontDeque(d, 7);
+        addRearDeque(d, 12);
+        addFrontDeque(d, 5);
+        addRearDeque(d, 6);
         printDeque(d);
-        delFront(d);
+        delFrontDeque(d);
         printDeque(d);
-        delRear(d);
+        delRearDeque(d);
         printDeque(d);
         deleteDeque(d);
     ---------------------------------------------DEQUE END-----------------------------------------
@@ -130,5 +131,22 @@ int main()
         deleteNodeDoublyLinkedList(&head, head->next->next->next->next->next);
         printDoublyLinkedList(head);
     ---------------------------------------------DOUBLY LINKED LIST END----------------------------
+    */
+
+    /*
+    ---------------------------------------------CIRCULAR LINKED LIST------------------------------
+        struct Node* last = NULL;
+
+        last = addToEmptyCircularLinkedList(last, 6);
+        last = addEndCircularLinkedList(last, 8);
+        last = addFrontCircularLinkedList(last, 2);
+        last = addAfterCircularLinkedList(last, 10, 2);
+
+        printCircularLinkedList(last);
+        deleteNodeCircularLinkedList(&last, 8);
+
+        printf("\n");
+        printCircularLinkedList(last);
+    ---------------------------------------------CIRCULAR LINKED LIST END--------------------------
     */
 }

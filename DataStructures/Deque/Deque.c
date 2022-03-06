@@ -48,7 +48,7 @@ void deleteDeque(deque* d)
     free(d);
 }
 
-int count(deque* d)
+int countDeque(deque* d)
 {
     int c = 0;
 
@@ -59,7 +59,7 @@ int count(deque* d)
     return c;
 }
 
-void addFront(deque* d, dequeValue value)
+void addFrontDeque(deque* d, dequeValue value)
 {
     if (d->front == 0 && d->rear == d->capacity - 1)
     {
@@ -79,7 +79,7 @@ void addFront(deque* d, dequeValue value)
 
     if (d->rear != d->capacity - 1)
     {
-        int c = count(d);
+        int c = countDeque(d);
         int k = d->rear + 1;
 
         for (int i = 1; i <= c; i++)
@@ -99,7 +99,7 @@ void addFront(deque* d, dequeValue value)
     }
 }
 
-void addRear(deque* d, dequeValue value)
+void addRearDeque(deque* d, dequeValue value)
 {
     if (d->front == 0 && d->rear == d->capacity - 1)
     {
@@ -139,7 +139,7 @@ void addRear(deque* d, dequeValue value)
     d->data[d->rear] = value;
 }
 
-void delFront(deque* d)
+void delFrontDeque(deque* d)
 {
     if (d->front == -1)
     {
@@ -161,7 +161,7 @@ void delFront(deque* d)
         d->front++;
 }
 
-void delRear(deque* d)
+void delRearDeque(deque* d)
 {
     if (d->front == -1)
     {

@@ -22,28 +22,23 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-#ifndef DEQUE_H
-#define DEQUE_H
+#ifndef CIRCULAR_LINKED_LIST_H
+#define CIRCULAR_LINKED_LIST_H
 
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef void* dequeValue;
-typedef struct
+struct Node
 {
-    unsigned int capacity;
-    dequeValue* data;
-    int front;
-    int rear;
-} deque;
+    int data;
+    struct Node* next;
+};
 
-deque* createDeque(unsigned int);
-void deleteDeque(deque*);
-void addFrontDeque(deque*, dequeValue);
-void addRearDeque(deque*, dequeValue);
-void delFrontDeque(deque*);
-void delRearDeque(deque*);
-int countDeque(deque*);
-void printDeque(deque*);
+struct Node* addToEmptyCircularLinkedList(struct Node*, int);
+struct Node* addFrontCircularLinkedList(struct Node*, int);
+struct Node* addEndCircularLinkedList(struct Node*, int);
+struct Node* addAfterCircularLinkedList(struct Node*, int, int);
+void deleteNodeCircularLinkedList(struct Node**, int);
+void printCircularLinkedList(struct Node*);
 
-#endif // !DEQUE_H
+#endif // !CIRCULAR_LINKED_LIST_H

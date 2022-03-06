@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CircularLinkedList\CircularLinkedList.c" />
     <ClCompile Include="CircularQueue\CircularQueue.c" />
     <ClCompile Include="Deque\Deque.c" />
     <ClCompile Include="DoublyLinkedList\DoublyLinkedList.c" />
@@ -28,6 +29,7 @@
     <ClCompile Include="Stack\Stack.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CircularLinkedList\CircularLinkedList.h" />
     <ClInclude Include="CircularQueue\CircularQueue.h" />
     <ClInclude Include="Deque\Deque.h" />
     <ClInclude Include="DoublyLinkedList\DoublyLinkedList.h" />
