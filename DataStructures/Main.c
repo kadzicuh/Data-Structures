@@ -27,6 +27,7 @@ SOFTWARE.
 //#include "CircularQueue/CircularQueue.h"
 //#include "Deque/Deque.h"
 //#include "SinglyLinkedList/SinglyLinkedList.h"
+//#include "DoublyLinkedList/DoublyLinkedList.h"
 
 int main() 
 {
@@ -113,5 +114,21 @@ int main()
         printf("\nSorted List: ");
         printSinglyLinkedList(head);
     ---------------------------------------------SINGLY LINKED LIST END----------------------------
+    */
+
+    /*
+    ---------------------------------------------DOUBLY LINKED LIST--------------------------------
+        struct Node* head = NULL;
+
+        insertEndDoublyLinkedList(&head, 5);
+        insertFrontDoublyLinkedList(&head, 1);
+        insertFrontDoublyLinkedList(&head, 6);
+        insertEndDoublyLinkedList(&head, 9);
+        insertAfterDoublyLinkedList(head, 11);
+        insertAfterDoublyLinkedList(head->next, 15);
+        printDoublyLinkedList(head);
+        deleteNodeDoublyLinkedList(&head, head->next->next->next->next->next);
+        printDoublyLinkedList(head);
+    ---------------------------------------------DOUBLY LINKED LIST END----------------------------
     */
 }

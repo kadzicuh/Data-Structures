@@ -33,6 +33,9 @@
     <ClCompile Include="SinglyLinkedList\SinglyLinkedList.c">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="DoublyLinkedList\DoublyLinkedList.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Stack\Stack.h">
@@ -48,6 +51,9 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="SinglyLinkedList\SinglyLinkedList.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="DoublyLinkedList\DoublyLinkedList.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
